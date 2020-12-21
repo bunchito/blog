@@ -1,0 +1,62 @@
+/* Card */
+.card-container {
+  margin: 20px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid black;
+}
+
+.card-image {
+  min-height: 100px;
+  background: url('../../images/map.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-content {
+  padding: var(--base-padding);
+  position: relative;
+}
+
+.card-content .button {
+  background: var(--dark-blue);
+  color: var(--white);
+  padding: var(--base-padding);
+  border: 1px solid #000;
+  font-size: 0.75em;
+  text-decoration: none;
+}
+
+.card-content .button:hover {
+  border-color: var(--dark-blue);
+  background: var(--white);
+  color: var(--dark-blue);
+}
+
+.card-content img {
+  display: none;
+}
+
+/* Tablet */
+@media only screen and (min-width : 768px) {
+  .card-container {
+    margin: 0px 20px 20px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid black;
+  }
+
+  .card-container:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .card-container:nth-child(even) {
+    margin-right: 20px;
+  }
+}
+
+/* Desktop */
+
+@media only screen and (min-width : 1024px) {
+  .card-container:nth-child(even) {
+    margin-right: 0;
+  }
+}

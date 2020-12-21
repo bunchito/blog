@@ -1,0 +1,89 @@
+@import url("responsive.css");
+@import url("media.css");
+@import url("components/card.css");
+@import url("components/profile.css");
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+/* Theme */
+:root {
+  --dark-blue: #272643;
+  --medium-blue: #2c698d;
+  --light-blue: #e3f6f5;
+  --clear-blue: #e3f6f5;
+  --white: #ffffff;
+  --base-padding: 10px;
+  --base-margin: 10px;
+  --base-2x-margin: 20px;
+  --base-font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Verdana, "Geneva", Tahoma, sans-serif;
+  font-size: var(--base-font-size);
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+p {
+  line-height: 2;
+}
+
+blockquote {
+  float: left;
+  border-left: 10px solid;
+  border-color: var(--medium-blue);
+  margin: var(--base-margin);
+  padding: var(--base-padding);
+  width: calc(100% - 40px);
+}
+
+blockquote:before {
+  color: var(--medium-blue);
+  font-family: "Font Awesome 5 Free";
+  content: "\f0eb";
+  font-size: 1em;
+}
+
+
+.date {
+  font-size: 0.6em;
+  font-style: italic;
+}
+
+.flex-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.full-width {
+  max-width: 100%;
+}
